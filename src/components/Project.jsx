@@ -20,37 +20,37 @@ const Project = () => {
     },
     {
       img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      name: "Countries App",
+      github_link: "https://github.com/edcastillob/Countries-ProyectoIndividual",
+      live_link: "https://front-countries-opal.vercel.app/",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      name: "Rick & Morty",
+      github_link: "https://github.com/edcastillob/Rick_And_Morty",
+      live_link: "https://646fdd33cf50d909a04c14f0--rick-and-morty-edcastillob.netlify.app/",
     },
     {
       img: project4,
-      name: "React Nav",
+      name: "Survey App",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        "https://github.com/edcastillob/SurveyApp",
+      live_link: "https://surveyecastillob.netlify.app/",
     },
     {
       img: project5,
-      name: "Vue Country",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
+      name: "Gallery App",
+      github_link: "https://github.com/edcastillob/Gallery-React-deploy",
+      live_link: "https://64432868954f5a1e0517aa49--silly-croissant-e1dc69.netlify.app/",
     },
   ];
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
-          My <span className="text-cyan-600">Projects</span>
+          Algunos de <span className="text-cyan-600">mis Proyectos</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        {/* <p className="text-gray-400 mt-3 text-lg">My awesome works</p> */}
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -90,7 +90,7 @@ const Project = () => {
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
-                      Live Demo
+                      Link Demo
                     </a>
                   </div>
                 </div>

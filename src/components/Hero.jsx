@@ -6,6 +6,7 @@ const Hero = () => {
     "logo-github",
     "logo-linkedin",
     "logo-twitter",
+    "mail-outline",
   ];
 
   
@@ -17,6 +18,8 @@ const Hero = () => {
         return "https://www.linkedin.com/in/edcastillob/";
       case "logo-twitter":
         return "https://twitter.com/edwar_castillo";
+      case "mail-outline":
+        return "mailto:edwar.castillo@gmail.com"
       default:
         return "#"; 
     }

@@ -4,7 +4,7 @@ import aboutImg from "../assets/images/about.png";
 const About = () => {
   const info = [
     { text: "Años de Experiencia", count: "02" },
-    { text: "Proyecto completados", count: "05" },
+    { text: "Proyecto completados", count: "07" },
     { text: "Contribuciones", count: "02" },
   ];
   return (
@@ -14,13 +14,13 @@ const About = () => {
           Sobre <span className="text-cyan-600">Mí</span>
         </h3>        
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
-          <div className="p-2">
+          {/* <div className="p-2"> */}
             <div className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/10 mx-auto">
+               <p className="text-justify leading-7 w-11/10">
                 ¡Hola! Soy ED!, un <strong>Ingeniero de Sistemas</strong> con más de
                 una década de experiencia en tecnología y más de 2 años como
                 Full Stack Developer en el desarrollo web. <br />
-                <strong>Resumen Profesional:</strong>
+                <strong>Resumen Profesional</strong> <br />
 
                 <strong>Ingeniero de Sistemas:</strong> Egresado en 2009 con un enfoque en
                 análisis y diseño de sistemas. <br />
@@ -35,12 +35,14 @@ const About = () => {
                 tecnológicos complejos. <br /> 
                 <strong>Enfoque Profesional:</strong> Busco constantemente formas innovadoras de mejorar la experiencia del usuario y la eficiencia operativa. Mi compromiso con la
                 excelencia y mi deseo de crecimiento constante me convierten en
-                un activo valioso para cualquier equipo. <br /> <hr />
+                un activo valioso para cualquier equipo. <br /> <br /><hr /> <br />
                 <strong>Más Allá de lo Profesional:</strong> Fuera del trabajo, disfruto explorar nuevas
                 tecnologías 💻, contribuir a proyectos de código abierto y
                 compartir conocimientos con la comunidad✔️. También me apasionan
                 la música 🎵, correr 🏃🏽‍♂️, nadar 🏊‍♂️ y los viajes 🚗. ¡Gracias por visitar mi portafolio y por tomarte el tiempo de conocerme! Si estás interesado en explorar oportunidades profesionales emocionantes o simplemente quieres conectarte, ¡estaré encantado de saber de ti y de cómo puedo contribuir al éxito de tu equipo y proyectos!
-              </p>
+              </p> 
+           
+
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
@@ -63,17 +65,17 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+         {/* <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
-              <img
+               <img
                 src={aboutImg}
                 alt=""
                 className="w-full object-cover bg-cyan-600 rounded-xl"
-              />
+              /> 
             </div>
-          </div>
+          </div>*/}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

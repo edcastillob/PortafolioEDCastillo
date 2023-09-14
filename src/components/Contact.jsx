@@ -1,52 +1,70 @@
-import React from "react";
+
+
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const Contact = () => {
-  const contact_info = [
-    { logo: "mail", text: "codeaprogram@gmail.com" },
-    { logo: "logo-whatsapp", text: "123 456 780" },
-    {
-      logo: "location",
-      text: "demo location",
-    },
-  ];
+  const [state, handleSubmit] = useForm("xqkvlqzz");
+  if (state.succeeded) {
+      return <p>Gracias por Comunicarte... Estaré contactandote!</p>;
+  }
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
-          Contact <span className="text-cyan-600">Me</span>
+          Contacta <span className="text-cyan-600">me</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">Get in touch</p>
+        {/* <p className="text-gray-400 mt-3 text-lg">Get in touch</p> */}
 
         <div
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit">Send Message</button>
-          </form>
-          <div className="flex flex-col  gap-7 ">
-            {contact_info.map((contact, i) => (
-              <div
-                key={i}
-                className="flex flex-row  
-                  text-left gap-4 flex-wrap items-center"
-              >
-                <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-                  <ion-icon name={contact.logo}></ion-icon>
-                </div>
-                <p className="md:text-base text-sm  break-words">
-                  {contact.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+    
+      <form className="flex flex-col flex-1 gap-5" onSubmit={handleSubmit}>
+        
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        placeholder='Ingrese su email'
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder='Ingrese su comentario...'
+        rows={8}
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <button 
+      type="submit" 
+      className="btn-primary w-fit"
+      disabled={state.submitting}>      
+      Enviar
+      </button>  
       </div>
+      
+      
+    </form>
+   </div>
+        </div>
+      
     </section>
   );
-};
+}
 
 export default Contact;

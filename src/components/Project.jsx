@@ -54,7 +54,7 @@ const Project = () => {
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="lg:w-2/3 w-full">
+        <div className="lg:w-2/2 w-full">
           <Swiper
             slidesPerview={1.2}
             spaceBetween={20}
@@ -98,9 +98,9 @@ const Project = () => {
             ))}
           </Swiper>
         </div>
-        <div className="lg:block hidden">
+        {/* <div className="lg:block hidden">
           <img src={project_person} alt="" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

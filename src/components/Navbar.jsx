@@ -26,7 +26,9 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        <img style={{ width: 50 }} src={logo} alt="Logo EDCastillo" />
+      <a href="#home">
+      <img style={{ width: 35 }} src={logo} alt="Logo EDCastillo" />
+      </a>
         <div className="mx-7">
           <h4 className="text-3xl uppercase font-bold">
             E

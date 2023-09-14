@@ -14,9 +14,9 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      name: "ProdElevate",
+      github_link: "https://github.com/edcastillob/prodElevatePF",
+      live_link: "https://prodelevatepf.onrender.com/",
     },
     {
       img: project2,

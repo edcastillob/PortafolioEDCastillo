@@ -1,26 +1,45 @@
 import React from "react";
 import aboutImg from "../assets/images/about.png";
+
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Años de Experiencia", count: "02" },
+    { text: "Proyecto completados", count: "05" },
+    { text: "Contribuciones", count: "02" },
   ];
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
-          About <span className="text-cyan-600">Me</span>
-        </h3>
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
+          Sobre <span className="text-cyan-600">Mí</span>
+        </h3>        
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+              <p className="text-justify leading-7 w-11/10 mx-auto">
+                ¡Hola! Soy ED!, un <strong>Ingeniero de Sistemas</strong> con más de
+                una década de experiencia en tecnología y más de 2 años como
+                Full Stack Developer en el desarrollo web. <br />
+                <strong>Resumen Profesional:</strong>
+
+                <strong>Ingeniero de Sistemas:</strong> Egresado en 2009 con un enfoque en
+                análisis y diseño de sistemas. <br />
+                <strong>Liderazgo de Proyectos:</strong> Amplia
+                experiencia en liderar proyectos tecnológicos desde la
+                conceptualización hasta la implementación exitosa. <br /> 
+                <strong>Desarrollador Full Stack:</strong> Especializado en el desarrollo web, abordando
+                proyectos de manera integral. <br /> 
+                <strong>Aprendizaje Continuo:</strong> Apasionado por mantenerme actualizado en las últimas tendencias tecnológicas. <br /> 
+                <strong>Colaboración y Trabajo en Equipo:</strong> Creo en la
+                importancia de trabajar juntos para resolver desafíos
+                tecnológicos complejos. <br /> 
+                <strong>Enfoque Profesional:</strong> Busco constantemente formas innovadoras de mejorar la experiencia del usuario y la eficiencia operativa. Mi compromiso con la
+                excelencia y mi deseo de crecimiento constante me convierten en
+                un activo valioso para cualquier equipo. <br /> <hr />
+                <strong>Más Allá de lo Profesional:</strong> Fuera del trabajo, disfruto explorar nuevas
+                tecnologías 💻, contribuir a proyectos de código abierto y
+                compartir conocimientos con la comunidad✔️. También me apasionan
+                la música 🎵, correr 🏃🏽‍♂️, nadar 🏊‍♂️ y los viajes 🚗. ¡Gracias por visitar mi portafolio y por tomarte el tiempo de conocerme! Si estás interesado en explorar oportunidades profesionales emocionantes o simplemente quieres conectarte, ¡estaré encantado de saber de ti y de cómo puedo contribuir al éxito de tu equipo y proyectos!
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
@@ -35,9 +54,13 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="https://drive.google.com/file/d/1qq5MpNJmkV0S9fHwqEhbP5GP0rgVvEUv/view?usp=drive_link" target="_blank" download>
-  <button className="btn-primary">View CV</button>
-</a>
+              <a
+                href="https://drive.google.com/file/d/1qq5MpNJmkV0S9fHwqEhbP5GP0rgVvEUv/view?usp=drive_link"
+                target="_blank"
+                download
+              >
+                <button className="btn-primary">View CV</button>
+              </a>
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">

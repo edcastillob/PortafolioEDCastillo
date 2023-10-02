@@ -43,6 +43,12 @@ const Project = () => {
       github_link: "https://github.com/edcastillob/Gallery-React-deploy",
       live_link: "https://64432868954f5a1e0517aa49--silly-croissant-e1dc69.netlify.app/",
     },
+    {
+      img: project6,
+      name: "GitHub Api",
+      github_link: "https://github.com/edcastillob/FULLTIMEFORCE-EDCASTILLO",
+      live_link: "https://64432868954f5a1e0517aa49--silly-croissant-e1dc69.netlify.app/",
+    },
   ];
   return (
     <section id="projects" className="py-10 text-white">

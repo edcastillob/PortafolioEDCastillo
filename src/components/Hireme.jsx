@@ -1,5 +1,4 @@
 import React from "react";
-import hireMe from "../assets/images/hireMe.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/01Henry.png";
 import project2 from "../assets/images/02Egg.png";

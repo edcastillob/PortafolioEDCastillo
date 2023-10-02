@@ -3,6 +3,8 @@ import { DiHtml5, DiCss3, DiNodejs, DiJavascript1 } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiSequelize, SiExpress, SiPostgresql, SiMysql, SiJest } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { SiNestjs } from "react-icons/si";
+
 
 const Skills = () => {
   const skills = [
@@ -41,6 +43,9 @@ const Skills = () => {
     },
     {
       logo: <SiJest />,
+    },
+    {
+      logo: <SiNestjs />,
     },
   ];
   return (

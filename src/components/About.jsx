@@ -1,5 +1,4 @@
 import React from "react";
-import aboutImg from "../assets/images/about.png";
 
 const About = () => {
   const info = [

@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import Bot from "./components/Bot";
 import  ReactGA  from "react-ga";
 import { useLocation } from "react-router-dom";
-ReactGA.initialize('GTM-TNCG8496');
+ReactGA.initialize('G-5SBS38K79Z');
 
 const App = () => {
   const location = useLocation();

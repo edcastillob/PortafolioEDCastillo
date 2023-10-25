@@ -4,6 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { SiRedux, SiSequelize, SiExpress, SiPostgresql, SiMysql, SiJest } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiNestjs } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 
 
 const Skills = () => {
@@ -46,6 +48,9 @@ const Skills = () => {
     },
     {
       logo: <SiNestjs />,
+    },
+    {
+      logo: <TbBrandNextjs />,
     },
   ];
   return (

@@ -3,8 +3,9 @@ import React from "react";
 const About = () => {
   const info = [
     { text: "Años de Experiencia", count: "02" },
-    { text: "Proyecto completados", count: "07" },
-    { text: "Contribuciones", count: "02" },
+    { text: "Proyectos completados", count: "09" },
+    { text: "Contribuciones", count: "582" },
+    { text: "Tecnologías", count: "15" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -60,7 +61,7 @@ const About = () => {
                 target="_blank"
                 download
               >
-                <button className="btn-primary">View CV</button>
+                <button className="btn-primary">Ver CV</button>
               </a>
             </div>
           </div>

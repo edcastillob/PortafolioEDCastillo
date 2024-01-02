@@ -1,7 +1,7 @@
 import React from "react";
 import { DiHtml5, DiCss3, DiNodejs, DiJavascript1 } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
-import { SiRedux, SiSequelize, SiExpress, SiPostgresql, SiMysql, SiJest } from "react-icons/si";
+import { SiRedux, SiSequelize, SiExpress, SiPostgresql, SiMysql, SiJest, SiAngular, SiPrisma } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiNestjs } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -51,6 +51,12 @@ const Skills = () => {
     },
     {
       logo: <TbBrandNextjs />,
+    },
+    {
+      logo: <SiAngular />,
+    },
+    {
+      logo: <SiPrisma />,
     },
   ];
   return (

@@ -6,6 +6,7 @@ import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
 import project6 from "../assets/images/project-6.png";
+import project7 from "../assets/images/project-7.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,6 +50,12 @@ const Project = () => {
       name: "GitHub Api",
       github_link: "https://github.com/edcastillob/FULLTIMEFORCE-EDCASTILLO",
       live_link: "https://edcastillofulltimeforce.netlify.app/",
+    },
+    {
+      img: project7,
+      name: "SysFern Store",
+      github_link: "https://github.com/edcastillob/angular-product-project",
+      live_link: "https://github.com/edcastillob/angular-product-project",
     },
   ];
   return (

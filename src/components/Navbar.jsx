@@ -33,22 +33,13 @@ const Navbar = () => {
       <img style={{ width: 35 }} src={logo} alt="Logo EDCastillo" />
       </a>
         <div className="mx-7">
-          <h4 className="text-3xl uppercase font-bold">
-            E
-            <span className="text-cyan-600">D</span>
-            W
-            <span className="text-cyan-600">A</span>
-            R
-          </h4>
-        </div>
-        <div className="mx-1">
-          <h4 className="text-3xl">
+
+          <h4 className="text-3xl uppercase font-bold text-cyan-600">
+            E 
+          <span className=" text-cyan-50">dwar </span>&nbsp;
             C
-            <span className="text-cyan-600">as</span>
-            ti
-            <span className="text-cyan-600">ll</span>
-            o
-          </h4>
+          <span className=" text-cyan-50">astillo</span>
+          </h4> 
         </div>
         <div
           className={` ${

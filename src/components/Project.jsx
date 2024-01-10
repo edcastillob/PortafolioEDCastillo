@@ -7,6 +7,7 @@ import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
 import project6 from "../assets/images/project-6.png";
 import project7 from "../assets/images/project-7.png";
+import project8 from "../assets/images/project-8.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -56,6 +57,12 @@ const Project = () => {
       name: "SysFern Store",
       github_link: "https://github.com/edcastillob/angular-product-project",
       live_link: "https://github.com/edcastillob/angular-product-project",
+    },    
+    {
+      img: project8,
+      name: "Personnel Management System",
+      github_link: "https://github.com/edcastillob/PersonnelManagementSystem",
+      live_link: "https://github.com/edcastillob/PersonnelManagementSystem",
     },
   ];
   return (
